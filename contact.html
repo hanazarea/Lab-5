@@ -19,6 +19,7 @@
 </nav>
 <h1>Contact Us</h1>
 <!---Form-->
+<div class="formbox">
 <form>
 	<p>First and Last Name
 		<input type="text" name="First and Last Name"
@@ -26,19 +27,10 @@
 	</p>
 </form>
 <form>
-	<p>Address
-		<input type="text" name="Address"
-		size="15" maxlength="30" />	
-	</p>
-</form>
-<form>
 	<p>City
 		<input type="text" name="City"
 		size="15" maxlength="30" />	
-	</p>
-</form>
-<form>
-	<p>State
+		State
 		<select>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
@@ -92,24 +84,19 @@
 			<option value="WI">Wisconsin</option>
 			<option value="WY">Wyoming</option>
 			</select>
-	</p>
-</form>
-<form>
-	<p>Zip
+		Zip
 		<input type="text" name="Zip"
 		size="15" maxlength="30" />	
 	</p>
 </form>
+
 <form>
 	<p>Phone Number
 		<input type="text" name="Phone Number"
 		size="15" maxlength="30" />	
-	</p>
-</form>
-<form>
-	<p>Email
-		<input type="text" name="Email"
-		size="15" maxlength="30" />	
+		Email
+		<input type="email" name="Email"
+		size="30" maxlength="30" />	
 	</p>
 </form>
 <form>
@@ -133,24 +120,31 @@
 <p>
 	<input type="radio" name= "Card type"
 	value="Visa" checked="checked">
-	<img src="images/visa.png" width="50px">
+	<img src="images/visa.png" width="80px" class="cardpics">
 	<input type="radio" name="Card type"
-	value="MasterCard"><img src="images/mastercard1979.png" width="50px">
+	value="MasterCard"><img src="images/mastercard1979.png" width="50px" class="cardpics">
 	<input type="radio" name="Card type"
-	value="American Express"><img src="images/american_express.png" width="50px">
+	value="American Express"><img src="images/american_express.png" width="40px" class="cardpics">
 
 </p>
 
 <form>
 	<p>Card Number
-		<input type="text" name="Card Number"			size="15" maxlength="30" />	
+		<input type="text" name="Card Number"			size="15" maxlength="30"/>	
+		CVV	
+		<input type="text" name="CVV"			
+		size="4" maxlength="3"/>	
+		Expiration Date	
+		<input type="date" name="Expiration Date"			size="15" maxlength="30"/>	
 	</p>
 </form>	
 
-<form action="http://eg.com/email.php">
+<form action="http://eg.com/upload.php"
+method="post">
+
 	<input type="submit"
 	value="Submit" />
 </form>
-
+</div>
 </body>
 </html>
